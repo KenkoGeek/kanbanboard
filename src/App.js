@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import {MainBoard} from './Board';
 import logo from './logo.svg';
 import './App.css';
 
@@ -11,9 +12,7 @@ class App extends Component {
           <h2>Welcome to this example</h2>
         </div>
         <div className="App-container">
-        <p className="App-intro">
-          
-        </p>
+        <MainBoard />
         </div>
         <div className="App-footer">
         </div>
