@@ -1,11 +1,21 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import './Board.css';
 
 export class MainBoard extends React.Component{
-    render(){
+    addColumn(){
+        const newColumn = document.createElement('div');
+        const whereToAdd = document.getElementById('columns');
+        whereToAdd.appendChild(newColumn);
+        
+    }
+
+    render(){    
         return(
             <div>
-            <h1>This is MainBoard component</h1>
+                <button onClick={this.addColumn}>Add a column</button>
+                <div id="columns">
+                <h1>Lists of task</h1>
+                </div>
             </div>
         );
     }
